@@ -5,19 +5,19 @@
  #### GENERAL SETTINGS : Edit the following settings as needed
 
  # Actions
- export INSTALL_DEPENDENCIES=${INSTALL_DEPENDENCIES:-"no"}
- export INIT_POSTGRESQL=${INIT_POSTGRESQL:-"no"} # yes | no | docker-container
- export INIT_BACKUPS=${INIT_BACKUPS:-"no"} # yes | no | docker-host
- export INIT_NGINX=${INIT_NGINX:-"no"} # yes | no | docker-host
- export INIT_START_SCRIPTS=${INIT_START_SCRIPTS:-"no"} # yes | no | docker-host
- export INIT_SAAS_TOOLS=${INIT_SAAS_TOOLS:-"no"} # no | list of parameters to saas.py script
- export INIT_ODOO_CONFIG=${INIT_ODOO_CONFIG:-"no"} # no | yes | docker-container
- export INIT_USER=${INIT_USER:-"no"}
- export INIT_DIRS=${INIT_DIRS:-"no"}
- export ADD_AUTOINSTALL_MODULES=${ADD_AUTOINSTALL_MODULES:-""} # "['module1','module2']"
- export ADD_IGNORED_DATABASES=${ADD_IGNORED_DATABASES:-""} # "['db1','db2']"
+ export INSTALL_DEPENDENCIES=${INSTALL_DEPENDENCIES:-"yes"}
+ export INIT_POSTGRESQL=${INIT_POSTGRESQL:-"db-odoo"} # yes | no | docker-container
+ export INIT_BACKUPS=${INIT_BACKUPS:-"yes"} # yes | no | docker-host
+ export INIT_NGINX=${INIT_NGINX:-"yes"} # yes | no | docker-host
+ export INIT_START_SCRIPTS=${INIT_START_SCRIPTS:-"yes"} # yes | no | docker-host
+ export INIT_SAAS_TOOLS=${INIT_SAAS_TOOLS:-"yes"} # no | list of parameters to saas.py script
+ export INIT_ODOO_CONFIG=${INIT_ODOO_CONFIG:-"yes"} # no | yes | docker-container
+ export INIT_USER=${INIT_USER:-"yes"}
+ export INIT_DIRS=${INIT_DIRS:-"yes"}
+ export ADD_AUTOINSTALL_MODULES=${ADD_AUTOINSTALL_MODULES:-"['ir_attachment_force_storage']"} # "['module1','module2']"
+ export ADD_IGNORED_DATABASES=${ADD_IGNORED_DATABASES:-"odootest"} # "['db1','db2']"
  export GIT_PULL=${GIT_PULL:-"no"}
- export UPDATE_ADDONS_PATH=${UPDATE_ADDONS_PATH:-"no"}
+ export UPDATE_ADDONS_PATH=${UPDATE_ADDONS_PATH:-"yes"}
  export CLEAN=${CLEAN:-"no"}
 
  ## Dirs
